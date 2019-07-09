@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.wahanaartha.survey">
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_survey"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_survey"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".LoginActivity"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".SplashScreenActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".admin.AdminAddSurveyQuestionActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity android:name=".admin.AdminSurveyActivity"></activity>
+        <activity android:name=".admin.AdminActivity"/>
+        <activity android:name=".admin.AdminIndexDetailActivitySurvey"></activity>
+        <activity android:name=".responden.RespondenActivity"/>
+        <activity android:name=".responden.RespondenSurveyActivity" />
+        <activity android:name=".responden.RespondenHistoryDetailActivity"/>
+        <activity android:name=".admin.AdminIndexDetailActivity"/>
+        <activity android:name=".responden.RespondenChangePassword"/>
+        <activity android:name=".admin.AdminProfileDetailActivity"/>
+        <activity android:name=".admin.AdminProfileAddUser"/>
+        <activity android:name=".admin.AdminProfileEditActivity"/>
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths"/>
+        </provider>
+    </application>
+
+</manifest>

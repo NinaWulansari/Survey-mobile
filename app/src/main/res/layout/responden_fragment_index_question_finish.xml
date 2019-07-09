@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    android:background="@drawable/round_shape_button_white"
+    tools:context="com.wahanaartha.survey.responden.RespondenQuestionFinishFragment">
+
+    <ImageView
+        android:layout_marginTop="20dp"
+        android:src="@drawable/done"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        />
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:padding="20dp"
+        android:text="You have finished all question"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        />
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="20dp"
+        android:layout_below="@id/title">
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_shape_button">
+
+            <TextView
+                android:id="@+id/textview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Save"
+                android:textColor="#ffffff"
+                android:gravity="center"
+                android:textSize="15sp"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp" />
+
+            <View
+                android:id="@+id/save_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                style="@style/SelectableItemBackground"
+                android:layout_alignBottom="@id/textview"
+                android:layout_alignTop="@id/textview"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

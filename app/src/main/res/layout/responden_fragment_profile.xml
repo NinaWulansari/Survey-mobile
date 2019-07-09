@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="15dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_marginTop="8dp"
+                    android:text="Name"
+                    android:background="@color/white"
+                    android:layout_width="100dp"
+                    android:layout_height="43dp"
+                    android:padding="10dp"
+                    android:textSize="17sp"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:id="@+id/name_profile"
+                    android:layout_marginTop="8dp"
+                    android:hint="Name"
+                    android:gravity="center_vertical|right"
+                    android:background="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="43dp"
+                    android:padding="10dp"
+                    android:textSize="17sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_marginTop="8dp"
+                    android:text="Username"
+                    android:background="@color/white"
+                    android:layout_width="110dp"
+                    android:layout_height="43dp"
+                    android:textSize="17sp"
+                    android:padding="10dp"
+                    android:editable="false"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:id="@+id/username_profile"
+                    android:layout_marginTop="8dp"
+                    android:hint="Username"
+                    android:background="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="43dp"
+                    android:textSize="17sp"
+                    android:padding="10dp"
+                    android:editable="false"
+                    android:gravity="center_vertical|right"/>
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginTop="8dp"
+                android:text="Email"
+                android:background="@color/white"
+                android:layout_width="100dp"
+                android:layout_height="43dp"
+                android:padding="10dp"
+                android:textSize="17sp"
+                android:editable="false"
+                android:textColor="@color/black"/>
+            <TextView
+                android:id="@+id/email_profile"
+                android:layout_marginTop="8dp"
+                android:hint="Email"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:padding="10dp"
+                android:textSize="17sp"
+                android:editable="false"
+                android:gravity="center_vertical|right"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_marginTop="8dp"
+                    android:text="Group User"
+                    android:background="@color/white"
+                    android:layout_width="100dp"
+                    android:layout_height="43dp"
+                    android:padding="10dp"
+                    android:textSize="17sp"
+                    android:editable="false"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:id="@+id/group_user"
+                    android:layout_marginTop="8dp"
+                    android:hint="Group User"
+                    android:background="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="43dp"
+                    android:padding="10dp"
+                    android:textSize="17sp"
+                    android:editable="false"
+                    android:gravity="center_vertical|right"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginTop="8dp"
+                    android:text="Dealer Name"
+                    android:background="@color/white"
+                    android:editable="false"
+                    android:padding="10dp"
+                    android:layout_width="100dp"
+                    android:layout_height="43dp"
+                    android:textSize="17sp"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:id="@+id/dealer_name"
+                    android:layout_marginTop="8dp"
+                    android:hint="Dealer Name"
+                    android:background="@color/white"
+                    android:editable="false"
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="43dp"
+                    android:textSize="17sp"
+                    android:gravity="center_vertical|right"/>
+
+            </LinearLayout>
+
+                <Button
+                    android:id="@+id/button_change_pass"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|right"
+                    android:layout_marginTop="30dp"
+                    android:text="change PAssword"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:textColor="#ffff"
+                    android:background="@drawable/roundedbutton"/>
+
+            </LinearLayout>
+
+    </LinearLayout>
+
